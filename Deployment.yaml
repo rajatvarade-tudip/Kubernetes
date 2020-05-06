@@ -10,7 +10,7 @@ spec:
     matchLabels:
        name: prod
   template:
-    container:
+    containers:
       - name:
         image: nginx
         ports:
