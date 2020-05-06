@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deplyment
+metadata:
+  name: prod
+  label:prod
+spec:
+  replicas:3
+  selector:
+    matchLabels:
+      app:nginx
+  containers:
+  - name: nginx
+    image: nginx
